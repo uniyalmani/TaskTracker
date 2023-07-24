@@ -49,7 +49,7 @@ def get_task_by_id(id: int, db: Session = Depends(get_db), tasks_repo: TasksRepo
         return task
         
     except Exception as e:
-        return {"error": e}
+        raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail=error_msg)
 
 
 

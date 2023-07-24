@@ -1,0 +1,8 @@
+# .env file (environment variables)
+.env
+
+# pytest cache directory
+.pytest_cache/
+
+# Python byte-code cache
+__pycache__/

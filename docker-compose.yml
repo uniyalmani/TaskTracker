@@ -1,0 +1,39 @@
+version: '3.4'
+
+services:
+  mysql_db:
+    image: mysql:5.7
+    container_name: mysql_db
+    hostname: mysql_db
+    environment:
+      - MYSQL_ROOT_HOST="%"
+      - MYSQL_ROOT_PASSWORD=1234
+      - MYSQL_DATABASE=tasktracker
+      - MYSQL_USER=admin
+      - MYSQL_PASSWORD=admin123 
+    ports:
+      - "3305:3306"
+    volumes:
+      - /home/nitin/fynd_acad/docker-data-imdb4:/var/lib/mysql 
+
+
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+ 
+    environment:
+      - MYSQL_ROOT_HOST=mysql_db
+      - MYSQL_PORT=3306
+      - MYSQL_ROOT_PASSWORD=1234
+      - MYSQL_DATABASE=tasktracker
+      - MYSQL_USER=admin
+      - MYSQL_PASSWORD=admin123
+
+    volumes:
+      - .:/usr/src/app
+    depends_on:
+      - mysql_db
+    ports:  
+      - "8000:8000"
+      - "5678:5678"

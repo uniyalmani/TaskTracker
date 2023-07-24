@@ -1,0 +1,11 @@
+venv/
+# Ignore development and unnecessary files
+__pycache__/
+.pytest_cache/
+*.pyc
+*.pyo
+*.pyd
+*.pyz
+*.pyw
+*.py~
+*.DS_Store

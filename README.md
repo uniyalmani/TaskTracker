@@ -1,7 +1,8 @@
 # TaskTracker
 Task Tracker is a personal project designed to help individuals efficiently manage and track their tasks and activities
 
-#API
+---
+# API
 
 ---
 

@@ -4,7 +4,7 @@ Task Tracker is a personal project designed to help individuals efficiently mana
 ### Running Project on local
 ```
 {
-requirement - docker, docker-compose
+requirements - docker, docker-compose
 Command - docker-compose up
 }
 ```
@@ -13,7 +13,7 @@ Command - docker-compose up
 
 ```
 {
-requirement - requests, pytest
+requirements - requests, pytest
 Command - pytest
 }
 ```

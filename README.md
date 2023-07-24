@@ -1,6 +1,23 @@
 # TaskTracker
 Task Tracker is a personal project designed to help individuals efficiently manage and track their tasks and activities
 
+### Running Project on local
+```
+{
+requirement - docker, docker-compose
+Command - docker-compose up
+}
+```
+
+### Running test cases 
+
+```
+{
+requirement - requests, pytest
+Command - pytest
+}
+```
+
 ---
 # API
 

@@ -6,3 +6,5 @@
 
 # Python byte-code cache
 __pycache__/
+
+env/

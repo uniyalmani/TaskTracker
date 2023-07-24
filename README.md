@@ -6,7 +6,7 @@ Task Tracker is a personal project designed to help individuals efficiently mana
 
 ---
 
-***Create a new Task***
+## ***Create a new Task***
 ```
 POST /v1/tasks
 ```
@@ -20,7 +20,7 @@ POST /v1/tasks
 {title: "Test Task 2"}
 ```
 ---
-***Create multiple Task***
+## ***Create multiple Task***
 ```
 POST /v1/tasks
 ```
@@ -48,7 +48,7 @@ POST /v1/tasks
 ```
 ---
 
-***Bulk add tasks***
+## ***Bulk add tasks***
 ```
 GET /v1/tasks
 ```
@@ -67,7 +67,8 @@ None
 }
 ```
 ---
-***Get a specific task***
+
+## ***Get a specific task***
 ```
 GET /v1/tasks/{id}
 ```
@@ -87,7 +88,7 @@ This endpoint returns a specific task or returns a 404 not found response
 ```
 ---
 
-***Delete a specific task***
+## ***Delete a specific task***
 ```
 DELETE /v1/tasks/{id}
 ```
@@ -105,7 +106,7 @@ This endpoint deletes a specific task. If the task doesn’t exist still send th
 ```
 ---
 
-***Bulk delete tasks***
+## ***Bulk delete tasks***
 ```
 DELETE /v1/tasks
 ```
@@ -130,7 +131,7 @@ This endpoint bulk deletes more than one task.
 
 ---
 
-***Edit the title or completion of a specific task***
+## ***Edit the title or completion of a specific task***
 
 ```
 PUT /v1/tasks/{id}
